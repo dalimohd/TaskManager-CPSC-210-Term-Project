@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: rgba(40, 53, 147, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddController">
+    <children>
+        <AnchorPane layoutY="92.0" prefHeight="408.0" prefWidth="500.0" style="-fx-background-color: rgba(225,226,225,1);">
+         <children>
+            <Label layoutX="49.0" layoutY="51.0" text="What would you like to do?" textFill="#2e3ae8">
+               <font>
+                  <Font name="SF Pro Display Semibold Italic" size="18.0" />
+               </font></Label>
+            <TextField fx:id="taskTitleField" layoutX="49.0" layoutY="77.0" prefHeight="27.0" prefWidth="412.0" />
+            <Label layoutX="50.0" layoutY="243.0" text="Due Date" textFill="#2e3ae8">
+               <font>
+                  <Font name="SF Pro Display Semibold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="142.0" text="Location this task is to be completed?" textFill="#2e3ae8">
+               <font>
+                  <Font name="SF Pro Display Semibold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="taskLocationField" layoutX="49.0" layoutY="165.0" prefHeight="27.0" prefWidth="412.0" />
+            <DatePicker fx:id="dueDateBox" layoutX="49.0" layoutY="267.0" />
+            <Label layoutX="271.0" layoutY="243.0" text="Due Time (Format hh:mm)" textFill="#2e3ae8">
+               <font>
+                  <Font name="SF Pro Display Semibold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="timeBox" layoutX="272.0" layoutY="267.0" prefHeight="27.0" prefWidth="150.0" />
+            <Label layoutX="48.0" layoutY="217.0" text="Optional: add a deadline" textFill="#2e3ae8">
+               <font>
+                  <Font name="SF Pro Display Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="addTaskButton" fitHeight="75.0" fitWidth="75.0" layoutX="206.0" layoutY="311.0">
+               <image>
+                  <Image url="@images/CircleAdd.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+        <Label layoutX="101.0" layoutY="25.0" text="Add" textFill="WHITE">
+            <font>
+                <Font name="SF Pro Display Bold" size="36.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="backButton" fitHeight="52.0" fitWidth="54.0" layoutX="20.0" layoutY="21.0">
+         <image>
+            <Image url="@images/BackButton.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

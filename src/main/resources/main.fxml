@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: rgba(40, 53, 147, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <AnchorPane layoutY="92.0" prefHeight="408.0" prefWidth="500.0" style="-fx-background-color: rgba(225,226,225,1);">
+         <children>
+            <Label layoutX="142.0" layoutY="32.0" text="Add New Task">
+               <font>
+                  <Font name="SF Pro Display Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="addButton" fitHeight="77.0" fitWidth="82.0" layoutX="21.0" layoutY="15.0">
+               <image>
+                  <Image url="@images/CircleAdd.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="viewButton" fitHeight="61.0" fitWidth="67.0" layoutX="29.0" layoutY="120.0">
+               <image>
+                  <Image url="@images/List.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="142.0" layoutY="129.0" text="View and Remove">
+               <font>
+                  <Font name="SF Pro Display Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="221.0" text="Location View">
+               <font>
+                  <Font name="SF Pro Display Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="locationViewButton" fitHeight="77.0" fitWidth="107.0" layoutX="29.0" layoutY="204.0">
+               <image>
+                  <Image url="@images/LocView.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="saveButton" fitHeight="88.0" fitWidth="76.0" layoutX="29.0" layoutY="300.0">
+               <image>
+                  <Image url="@images/save.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="132.0" layoutY="322.0" text="Save">
+               <font>
+                  <Font name="SF Pro Display Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="loadButton" fitHeight="88.0" fitWidth="76.0" layoutX="263.0" layoutY="300.0">
+               <image>
+                  <Image url="@images/Load.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="366.0" layoutY="322.0" text="Load">
+               <font>
+                  <Font name="SF Pro Display Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="36.0" layoutY="31.0" text="Welcome to TaskManager" textFill="WHITE">
+         <font>
+            <Font name="SF Pro Display Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
